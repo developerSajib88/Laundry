@@ -21,5 +21,11 @@ class AppConstants{
   static const String SUBTOTAL = "Subtotal";
   static const String PLACEED_ON = "Placed On : ";
   static const String DELIVERY_ON = "Delivery On : ";
+  static const String DELIVERY = "Delivery";
+  static const String WASHING_AND_FOLDING = "WASHING AND FOLDING";
+  static const String IRONING = "IRONING";
+  static const String YOUR_CLOTH_IS_WASHING = "Your clothes are now washing.";
+  static const String ESTIMATET_DELIVERY = "Estimatet Delivery";
+  static const String HEADLINE = """This is the first version of our laundry app. Please sign in or create account below""";
 
 }

@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_laundry/presentation/screen/other_screen/order_details_screen.dart';
 
 import '../../utils/app_colors.dart';
 import '../../utils/app_constants.dart';
@@ -22,7 +24,7 @@ class LatestOrderList extends StatelessWidget {
 
           child: Material(color: Colors.transparent,
             child: InkWell(
-              onTap: (){},
+              onTap: ()=>Navigator.of(context).push(CupertinoPageRoute(builder: (context)=> const OrderDetailsScreen())),
               splashColor: AppColor.blueColor,
               child: Padding(padding: const EdgeInsets.all(10),
 
@@ -75,7 +77,7 @@ class LatestOrderList extends StatelessWidget {
           child: Material(
             color: Colors.transparent,
             child: InkWell(splashColor: AppColor.blueColor,
-              onTap: (){},
+              onTap: ()=>Navigator.of(context).push(CupertinoPageRoute(builder: (context)=> const OrderDetailsScreen())),
               child: Padding(
                 padding: const EdgeInsets.all(10),
                 child: Row( crossAxisAlignment: CrossAxisAlignment.start, children: [
