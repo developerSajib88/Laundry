@@ -2,7 +2,7 @@ class AppConstants{
 
   /// App String
   static const String WELCOME_BACK = "Welcome Back,";
-  static const String NEW_LOCATION = "New Locations,";
+  static const String NEW_LOCATION = "New Locations";
   static const String LATEST_ORDER = "Latest Orders";
   static const String DELEVERING_ORDER = "Delivering Order";
   static const String PICKING_UP_ORDER = "Picking Up Order";
@@ -19,5 +19,7 @@ class AppConstants{
   static const String DETAILS_ABOUT = "Details About";
   static const String TOTAL = "Total";
   static const String SUBTOTAL = "Subtotal";
+  static const String PLACEED_ON = "Placed On : ";
+  static const String DELIVERY_ON = "Delivery On : ";
 
 }
