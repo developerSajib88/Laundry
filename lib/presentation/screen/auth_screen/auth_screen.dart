@@ -33,10 +33,10 @@ class AuthScreen extends HookConsumerWidget {
               
               Expanded(
                 child: Container(width: double.infinity,height: double.infinity,padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
+                 decoration: const BoxDecoration(
                   color: AppColor.backgroundColor,
-                  borderRadius: BorderRadius.circular(15)
-                ),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(15),topLeft: Radius.circular(15))
+                 ),
 
                   child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
 

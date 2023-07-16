@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:my_laundry/presentation/screen/navigation_screen/home_screen.dart';
+import 'package:my_laundry/presentation/screen/other_screen/bottom_navigation_screen.dart';
 import 'package:my_laundry/presentation/widget/background_widget.dart';
 import 'package:my_laundry/presentation/widget/custom_button.dart';
 import 'package:my_laundry/presentation/widget/custom_textform.dart';
@@ -22,6 +23,8 @@ class LogInScreen extends HookConsumerWidget {
     return Scaffold(
       body: BackgroundWidget(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+
+
           IconButton(
               onPressed: ()=>Navigator.of(context).pop(),
               icon : const Icon(Icons.arrow_back_ios,color: AppColor.whiteColor,)
@@ -29,7 +32,7 @@ class LogInScreen extends HookConsumerWidget {
 
           const SizedBox(height: 20,),
 
-          Padding(padding:  EdgeInsets.symmetric(horizontal: 15),
+          Padding(padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Text(AppConstants.LOG_IN_T0_YOUR_ACCOUNT,style: FontStyle.subHeaderTextStyle,)
           ),
 
@@ -90,7 +93,7 @@ class LogInScreen extends HookConsumerWidget {
 
 
                  CustomButton(
-                     onPressed: ()=> Navigator.push(context, CupertinoPageRoute(builder: (context)=> const HomeScreen())),
+                     onPressed: ()=> Navigator.push(context, CupertinoPageRoute(builder: (context)=> const BottomNavigationScreen())),
                      text: AppConstants.LOG_IN
                  )
 
